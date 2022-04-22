@@ -1,0 +1,43 @@
+<div class="container">
+<!-- ---------------------------- HEADER START ----------------------------- -->
+<header class="navbar">
+    <div class="logo-name">EMSEPHRON</div>
+    <div class="btn-container">
+        <button routerLink="/login" class="btn-logout">LOGOUT<span><i class="pi pi-sign-out"></i></span></button>
+    </div>
+</header>
+<!-- ----------------------------- HEADER END ------------------------------ -->
+
+<!-- ---------------------------- SIDENAV START ---------------------------- -->
+<div class="sidenav">
+    <div class="logo-content">
+        <div class="logo">
+            <!-- <img src="../../assets/images/orange.png" alt="" class="logo"> -->
+            <div class="logo-name2">DASHBOARD</div>
+        </div>
+        <i class='pi pi-bars' id="toggle-btn"></i>
+    </div>
+
+    <ul class="nav-items">
+        <li>
+            <a routerLink="/admin/users">
+                <i class='pi pi-users' ></i>
+                <span class="item_name">Users</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/admin/user-account">
+                <i class='pi pi-cog' ></i>
+                <span class="item_name">User Account</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- ----------------------------- SIDENAV END ----------------------------- -->
+
+<!-- ------------------------------- ROUTES -------------------------------- -->
+<div class="page-content">
+    <router-outlet></router-outlet>
+</div>
+<!-- ----------------------------- ROUTES END ------------------------------ -->
+</div>

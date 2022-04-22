@@ -1,0 +1,125 @@
+/* -------------------------------- CONTAINER ------------------------------- */
+
+.container {
+    // display: grid;
+    // grid-template-columns: auto;
+    // grid-auto-rows: minmax(auto);
+    // grid-template-areas:
+    //     "header header"
+    //     "sidebar content";
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+
+.navbar {
+    background: url(../../../assets/images/white-banner.jpg);
+    background-position: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 70px;
+}
+
+.logo-name, button {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.logo-name {
+    color: #24252a;
+    margin-top: .5rem;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--primary-clr);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
+}
+
+span {
+    margin-left: .5rem;
+}
+
+button:hover {
+    background-color: var(--primary-clr-hover);
+}
+
+/* --------------------------------- SIDENAV -------------------------------- */
+
+.sidenav {
+    grid-area: sidebar;
+    position: fixed;
+    width: var(--sidenav-width);
+    height: calc(100% - 70px);
+    background: #24252a;
+    padding: 6px 14px;
+}
+
+.logo-name2 {
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+.logo-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav #toggle-btn{
+    position: absolute;
+    cursor: pointer;
+    color: var(--white);
+    left: 90%;
+    font-size: 1.2rem;
+    transform: translate(-50%, 80%);
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--white)
+}
+
+.sidenav ul {
+    margin-top: 1.5rem;
+}
+
+.sidenav ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+}
+
+.sidenav ul li a {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.sidenav ul li a i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidenav ul li a:hover {
+    background: var(--primary-clr);
+}
+
+/* ------------------------------ PAGE CONTENT ------------------------------ */
+
+.page-content {
+    position: fixed;
+    left: var(--sidenav-width);
+    padding: 15px;
+    height: calc(100% - 70px);
+    overflow: scroll;
+    border: 1px solid #ccc;
+}

@@ -1,3 +1,13 @@
+:host {
+    background: var(--body-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-container {
     color: #fff;
     background: linear-gradient(90deg, rgb(143, 190, 224, 0.3) 0%, rgb(170, 153, 203, 0.3) 100%);

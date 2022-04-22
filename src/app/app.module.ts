@@ -12,11 +12,15 @@ import {PasswordModule} from 'primeng/password';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { UsersComponent } from './pages/admin/contents/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    AdminComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

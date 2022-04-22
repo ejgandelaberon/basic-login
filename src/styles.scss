@@ -1,12 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-body {
-    background: url('./assets/images/macbook.png');
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+:root {
+    --body-background: url('./assets/images/macbook.png');
+    --primary-font: 'Montserrat', sans-serif;
+    --primary-clr: rgb(0,136,169);
+    --primary-clr-hover: rgb(0, 105, 132);
+    --white: #edf0f1;
+    --sidenav-width: 240px;
+}
+
+// body {
+//     background: var(--body-background);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     font-family: var(--primary-font);
+//     min-height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0;
+// }
+
+* {
+    font-family: var(--primary-font);
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
