@@ -1,0 +1,36 @@
+.login-container {
+    color: #fff;
+    background: linear-gradient(90deg, rgb(143, 190, 224, 0.3) 0%, rgb(170, 153, 203, 0.3) 100%);
+}
+
+.header {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    min-width: 350px;
+}
+
+.form-group {
+    padding: .8rem 1.5rem .8rem;
+}
+
+.form-group label{
+    display: block;
+    font-size: .8rem;
+}
+
+.form-group input {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.btn-container {
+    padding: 1.5rem;
+}
+
+.btn-container button {
+    display: block;
+    width: 100%;
+}

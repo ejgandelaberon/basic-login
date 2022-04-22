@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="header">
+        {{header ? header.toUpperCase() : 'login'.toUpperCase()}}
+    </div>
+
+    <div class="content">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="form-group">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" formControlName="username" pInputText placeholder="Username">         
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                    <input type="password" formControlName="password" pInputText placeholder="Password">         
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button pButton pRipple type="submit" label="Login"></button>
+            </div>
+        </form>
+    </div>
+</div>
