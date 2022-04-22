@@ -1,13 +1,7 @@
 /* -------------------------------- CONTAINER ------------------------------- */
 
-.container {
-    // display: grid;
-    // grid-template-columns: auto;
-    // grid-auto-rows: minmax(auto);
-    // grid-template-areas:
-    //     "header header"
-    //     "sidebar content";
-}
+// .container {
+// }
 
 /* --------------------------------- HEADER --------------------------------- */
 
@@ -15,7 +9,7 @@
     background: url(../../../assets/images/white-banner.jpg);
     background-position: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 1rem;
     height: 70px;
 }
@@ -119,7 +113,7 @@ li, a {
     position: fixed;
     left: var(--sidenav-width);
     padding: 15px;
-    height: calc(100% - 70px);
+    width: calc(100% - var(--sidenav-width));
+    height: calc(100% - var(--navbar-height));
     overflow: scroll;
-    border: 1px solid #ccc;
 }

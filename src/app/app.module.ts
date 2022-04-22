@@ -14,13 +14,15 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { UsersComponent } from './pages/admin/contents/users/users.component';
+import { UserAccountComponent } from './pages/admin/contents/user-account/user-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     AdminComponent,
-    UsersComponent
+    UsersComponent,
+    UserAccountComponent
   ],
   imports: [
     BrowserModule,
