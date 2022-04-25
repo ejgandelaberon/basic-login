@@ -1,7 +1,7 @@
 <div class="container">
 <!-- ---------------------------- HEADER START ----------------------------- -->
 <header class="navbar">
-    <!-- <div class="logo-name">EMSEPHRON</div> -->
+    <div class="logo-name">{{currentLoggedUser ? currentLoggedUser : 'User Name'}} | {{userRole ? userRole : 'Unassigned'}}</div>
     <div class="btn-container">
         <button routerLink="/login" class="btn-logout">LOGOUT<span><i class="pi pi-sign-out"></i></span></button>
     </div>
