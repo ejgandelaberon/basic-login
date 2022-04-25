@@ -1,0 +1,16 @@
+[
+    {
+        "id": "d3bgA",
+        "fullname": "Emmanuel Joseph Beron",
+        "username": "ejberon02",
+        "password": "admin123",
+        "role": "admin"
+    },
+    {
+        "id": "4Tgh1",
+        "fullname": "Juan Dela Cruz",
+        "username": "juandc",
+        "password": "adminjuan",
+        "role": "user"
+    }
+]

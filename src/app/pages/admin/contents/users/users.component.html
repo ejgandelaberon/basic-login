@@ -1,40 +1,16 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quibusdam incidunt praesentium autem dolore provident, cum quidem dolor totam aliquid maxime expedita atque, excepturi necessitatibus sint porro vel modi doloribus!</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
-<br>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum similique nostrum molestias totam a porro dolorem sed quibusdam odio perspiciatis, inventore ea quisquam laudantium dignissimos eligendi dicta! Eum, obcaecati.</p>
+<p-table #dt [value]="users">
+    <ng-template pTemplate="header">
+        <tr>
+            <th *ngFor="let col of cols">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td *ngFor="let col of cols">
+                {{user[col.field]}}
+        </td>
+        </tr>
+    </ng-template>
+</p-table>
