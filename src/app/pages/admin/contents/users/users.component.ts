@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { UsersService } from 'src/app/pages/admin/contents/users/users.service';
+import { UsersService } from 'src/app/service/users.service';
 import { Users } from 'src/app/pages/admin/contents/users/users';
 import { Table } from 'primeng/table';
+import { MessageService } from 'primeng/api';
 
 export interface TableColumns {
   header: string;
@@ -17,14 +18,21 @@ export class UsersComponent implements OnInit {
   users!: Users[];
   cols!: TableColumns[];
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.loadUsers();
   }
 
   loadUsers() {
-    this.usersService.getUsers().subscribe(users => this.users = users);
+    this.usersService.getUsers().subscribe({
+      next: users => {
+        this.users = users
+      },
+      error: err => {
+        this.messageService.add({severity:'warn', summary:err.error, detail:'Token expired. Please re-login.'})
+      }
+    });
     this.cols = [
       { field: 'fullname', header: 'Fullname' },
       { field: 'username', header: 'Username' },
